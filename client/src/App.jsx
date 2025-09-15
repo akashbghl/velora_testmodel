@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Vapi from "@vapi-ai/web";
 
-const vapi = new Vapi("64d4656c-39c1-458a-b7d4-7a3a1cb40128");
+const VAPI_PUBLIC_KEY = import.meta.env.VITE_VAPI_PUBLIC_KEY;
+const vapi = new Vapi(VAPI_PUBLIC_KEY);
 
 const App = () => {
   const [messages, setMessages] = useState([]);
