@@ -12,7 +12,7 @@ const App = () => {
     // Call started
     vapi.on("call-start", () => {
       console.log("Call has started");
-    });
+    }); 
 
     // Call ended
     vapi.on("call-end", () => {
